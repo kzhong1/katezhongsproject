@@ -21,27 +21,35 @@ def print_message_for_subscribers():
     subscriber2['age']=24
     subscriber2['phone']=9788446571
     subscriber2['gender']='Female'
-    subscriber2['topic']=['self-love']
+    subscriber2['topic']=['self love']
     subscribers.append(subscriber2)
 
     #Affirmation Library, randomly generate affirmation using index 0-2
     quotes_library={}
     quotes_library['self love']=['I am good', 'I am perfect', 'I am beautiful']
     quotes_library['mental health']=['Everything will be okay', 'Anxiety is temporary', 'Positive thoughts only']
+    print(quotes_library, subscriber1, subscriber2)
+    print(quotes_library)
 
-    for subscriber in subscribers:
-        # Next 3 lines gets the current subscriber's information 
-        name = subscriber['name']
-        topics = subscriber['topic']
-        phone_number = subscriber['phone']
-        messages_to_print = []
 
-        for topic in topics:
-            quotes = quotes_library[topic]
-            affirmation_index = random.randint(0, 2)
-            message_to_print = messages_to_print.append(quotes[affirmation_index])
+    # for subscriber in subscribers:
+    #     # Next 3 lines gets the current subscriber's information 
+    #     name = subscriber['name']
+    #     topics = subscriber['topic']
+    #     phone_number = subscriber['phone']
+    #     messages_to_print = []
+
+    #     for topic in topics:
+    #         if topic == quotes_library.get(topic):
+
+    #         # TODO Figure out how to get the individual topics from the dictionary of quotes
+    #         # quotes = quotes_library[topic]
+    #         quotes = quotes_library.get(topic)
+    #         print(quotes)
+    #         # affirmation_index = random.randint(0, 2)
+    #         # message_to_print = messages_to_print.append(quotes[affirmation_index])
         
-        print(f'Good morning {name} here is your reminder for today {message_to_print}!')
+    #     print(f'Good morning {name} here is your reminder for today {message_to_print}!')
 
 
 
@@ -67,8 +75,8 @@ def print_message_for_subscribers():
     # # print(sorted(names_and_numbers.keys()))
     # print('Here is a list of current subscribers who signed up to receive notifications from the Sunshine App:')
     # # sorted_list = sorted(names_and_numbers.keys()) # Sorts names by 1st name
-    # # for key in sorted_list:
-    # #     print(key ,':', names_and_numbers[key])
+    # for key in sorted_list:
+    #     print(key ,':', names_and_numbers[key])
 
     # sorted_list_by_first_name = sorted(names_and_numbers.keys()) # Sorts names by sur name
     # sorted_list_by_last_name = sorted(sorted_list_by_first_name, key=lambda sorted_names:sorted_names.split(' ')[-1])
