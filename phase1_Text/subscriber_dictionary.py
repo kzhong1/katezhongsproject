@@ -8,7 +8,7 @@ def print_message_for_subscribers():
 
     #First Subscriber
     subscriber1={}
-    subscriber1['name']='Kate Zhong'
+    subscriber1['name']='Kate Star'
     subscriber1['age']=21
     subscriber1['phone']=9788447009
     subscriber1['gender']='Female'
@@ -17,7 +17,7 @@ def print_message_for_subscribers():
 
     #Second Subscriber
     subscriber2={}
-    subscriber2['name']='Joy Zhong'
+    subscriber2['name']='Joy Wu'
     subscriber2['age']=24
     subscriber2['phone']=9788446571
     subscriber2['gender']='Female'
